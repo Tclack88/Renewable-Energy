@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+dash = "*"
+dash-bootstrap-components = "*"
+gunicorn = "*"
+plotly = "*"
+pandas = "*"
+pyorbital = "*"
+lxml = "*"
+visdcc = "*"
+dash-daq = "*"
+joblib = "*"
+sklearn = "*"
+category-encoders = "*"
+xgboost = "*"
+
+[requires]
+python_version = "3"

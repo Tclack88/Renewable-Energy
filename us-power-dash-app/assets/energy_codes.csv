@@ -1,0 +1,41 @@
+Fuel Type,Energy,Energy Source Description,color
+Coal,ANT,Anthracite Coal,black
+Coal,BIT,Bituminous Coal,black
+Coal,LIG,Lignite Coal,black
+Coal,SGC,Coal-Derived Synthesis Gas,black
+Coal,SUB,Subbituminous Coal,black
+Coal,WC,Waste/Other Coal,black
+Coal,RC,Refined Coal,black
+Petroleum Products,DFO,Distillate Fuel Oil,purple
+Petroleum Products,JF,Jet Fuel,purple
+Petroleum Products,KER,Kerosene,purple
+Petroleum Products,PC,Petroleum Coke,purple
+Petroleum Products,PG,Gaseous Propane,purple
+Petroleum Products,RFO,Residual Fuel Oil,purple
+Petroleum Products,SGP,Synthesis Gas from Petroleum Coke,purple
+Petroleum Products,WO,Waste/Other Oil,purple
+Natural Gas and Other Gases,BFG,Blast Furnace Gas,grey
+Natural Gas and Other Gases,NG,Natural Gas,grey
+Natural Gas and Other Gases,OG,Other Gas,grey
+Solid Renewable  Fuels,AB,Agricultural By-Products,forestgreen
+Solid Renewable  Fuels,MSW,Municipal Solid Waste,forestgreen
+Solid Renewable  Fuels,OBS,Other Biomass Solids,forestgreen
+Solid Renewable  Fuels,WDS,Wood/Wood Waste Solids,forestgreen
+Liquid Renewable (Biomass) Fuels,OBL,Other Biomass Liquids,brown
+Liquid Renewable (Biomass) Fuels,SLW,Sludge Waste,brown
+Liquid Renewable (Biomass) Fuels,BLQ,Black Liquor,brown
+Liquid Renewable (Biomass) Fuels,WDL,Wood Waste Liquids excluding Black Liquor,brown
+Gaseous Renewable (Biomass)  Fuels,LFG,Landfill Gas,peru
+Gaseous Renewable (Biomass)  Fuels,OBG,Other Biomass Gas,peru
+All Other Renewable Fuels,SUN,Solar,gold
+All Other Renewable Fuels,WND,Wind,ghostwhite
+All Other Renewable Fuels,GEO,Geothermal,orangered
+All Other Renewable Fuels,WAT,Water at a Conventional,dodgerblue
+All Other Renewable Fuels,WAT,"Hydroelectric Turbine, and water used in Wave Buoy Hydrokinetic Technology, Current Hydrokinetic Technology, and Tidal Hydrokinetic Technology",turquoise
+All Other Energy Sources,WAT,Pumping Energy for Reversible,dodgerblue
+All Other Energy Sources,NUC,Nuclear,greenyellow
+All Other Energy Sources,PUR,Purchased Steam,lavender
+All Other Energy Sources,WH,Waste heat not directly attributed to a fuel source,darksalmon
+All Other Energy Sources,TDF,Tire-derived Fuels,dimgrey
+All Other Energy Sources,MWH,Electricity used for energy storage,goldenrod
+All Other Energy Sources,OTH,Specify in SCHEDULE 7,dimgrey
