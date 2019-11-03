@@ -1,11 +1,9 @@
-# Imports from 3rd party libraries
 import dash
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 
-# Imports from this application
 from app import app, server
 from pages import index, predictions, insights, process
 
@@ -46,9 +44,8 @@ footer = dbc.Container(
                 [
                     html.Span('Trevor Clack', className='mr-2'), 
                     html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:tclack88@gmail.com'), 
-                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/tclack88/'), 
+                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/Tclack88/Renewable-Energy/tree/master/us-power-dash-app'), 
                     html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/trevor-clack-774696184/'), 
-                    #html.A(html.I(className='fab fa-twitter-square mr-1'), href='https://twitter.com/<you>'), 
                 ], 
                 className='lead'
             )

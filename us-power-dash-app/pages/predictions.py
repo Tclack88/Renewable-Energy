@@ -50,8 +50,8 @@ layout = go.Layout(hovermode='closest', width=1000,height=800,mapbox=dict(bearin
     pitch=0,zoom=3.2,accesstoken=mapbox_access_token,style = 'stamen-watercolor'))
 fig = dict(data=data2, layout=layout)
 
+# original map creation
 #fig = px.scatter_mapbox(data_frame = counties,lat = 'Latitude',lon = 'Longitude',zoom=3.2,opacity=0)#,customdata='Sort [1]')
-
 #fig.update_layout(mapbox_style = "stamen-watercolor",showlegend=False, width = 1000, height = 600)#,paper_bgcolor = 'papayawhip')
 
 
@@ -59,7 +59,6 @@ fig = dict(data=data2, layout=layout)
 plant_type_list = sorted(list(data.plant_type.unique()))
 
 energy_sources_list = [ list(data[data['plant_type'] == plant_type].energy_source.unique()) for plant_type in plant_type_list]
-#    plant_type_list.append({'label':plant,'value':plant})
 
 plant_type__energy_dict = dict(zip(plant_type_list,energy_sources_list))
 
@@ -120,7 +119,7 @@ column1 = dbc.Col([
     html.Hr(),
 
     html.Label('Set location:',style={'display':'inline-block'} ),
-#    html.P(id = 'display-lat-lon',children = ['latitude,longitude']),
+
     html.H5('LongLat:   ',id='lnglat-display'),
 
     html.Br(),
@@ -168,6 +167,7 @@ def update_prime_mover_dropdown(plant,energy):
     return [{'label':pm, 'value':pm} for pm in prime_mover_list]
 
 
+# Part of an old solution
 # @app.callback(
 #     Output('relayout-data', 'children'),
 #     [Input('basic-interactions', 'relayoutData')])
@@ -300,14 +300,3 @@ def update_pointer(event,en_src):
     fig = dict(data=data, layout=layout)
     return fig
 
-#    coords = coords.split()
-#    lat = float(coords[1][4:])
-#    lon = float(coords[0][4:])
-#    #sample = [[pt,es,pm,int(year),float(lat),float(lon),int(n)]]
-#    #cols = data.columns.drop(['total_power','power_encoded'])
-#    #df = pd.DataFrame(sample,columns = cols)
-#    data2 = [go.Scattermapbox(lat=lat, lon=lon, mode='markers', marker=dict(size=8))]
-#
-#    fig = dict(data=data2, layout=layout)
-#    return fig
-#

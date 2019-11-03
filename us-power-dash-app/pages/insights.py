@@ -61,19 +61,20 @@ column1 = dbc.Col(
             """
             ## Insights
 
+
+            - Hydroelectric power is old and still going strong
+
+            Hydroelectric power both as an immediate source and as pumped to heights forenergy storage (blue - pumping energy for reversible) is among the oldest sources of energy, many of the original plants built in the early 18th century are still active today.
+
+            - A hope for Nuclear?
+
+            It's a shame that very few nuclear plants have been built since the 80s
+            s (only 5 and one since the turn of the century) as they have the biggest power density. Despite this, as of 2019 it's the second leading source of raw power.
+
             - Renewable energy is on the rise! 
 
             As technologies such as wind, solar, geothermal and even biomass catch up to displace coal (black) and petroleum products (purple), there's hope for a carbon free future.
 
-
-            - Hydroelectric power is old and going strong
-
-            Hydroelectric power both as an immediate source and as pumped to heights forenergy storage (blue - pumping energy for reversible) is among the oldest sources of renewable energy, many of the original plants built in the early 18th century are still active today.
-
-            - New hope for Nuclear?
-
-            It's a shame that very few nuclear plants have been built since the 80s
-            s (only 5 and one since the turn of the century) as they have the biggest power density.
 
             """
 
@@ -94,7 +95,12 @@ column2 = dbc.Col(
             max = 2020,
             step = 1,
             value = 2020,
-            marks = {'1900':'1900','1950':'1950','2000':'2000'})
+            marks = {str(yr) : str(yr) for yr in range(1900,2030,10)}),
+        html.Br(),
+        html.Br(),
+        html.Label('year:',style={'display':'inline-block'}),
+        html.Label('-------',style={'display':'inline-block','color':'white'}),
+        html.P('2019',id='selected-year',style={'display':'inline-block'})
     ]
 )
 
@@ -118,3 +124,8 @@ def update_plot(year):
     fig.update_traces(marker_line_color='#000000', marker_line_width=1.5, showlegend=False)
     return fig
 
+@app.callback(
+        Output('selected-year','children'),
+        [Input('year-slider','value')])
+def update_year(year):
+    return year
