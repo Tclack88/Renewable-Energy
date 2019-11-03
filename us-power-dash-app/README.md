@@ -1,6 +1,6 @@
 # U.S. Power Plants predictions - featuring plotly and dash
 
-[See the dash app here](us-power-plants.herokuapp.com)
+[See the dash app here](https://us-power-plants.herokuapp.com)
 
 or
 
@@ -12,4 +12,4 @@ The purpose of this project was to predict the power output of a new or hypothet
 
 This is an fully interactive app and is much more fun to play with than read about
 
-![Interactive portion of u.s. power plants in "insights" tab ](/assets/dash_app.gif)
+![Interactive portion of u.s. power plants in "insights" tab ](https://github.com/Tclack88/Renewable-Energy/blob/master/us-power-dash-app/assets/dash_app.gif)
